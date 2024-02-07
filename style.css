@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 10px;
+}
+.nav_bar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sidenav,
+.hb {
+  display: none;
+}
+
+.header {
+  padding: 10px 20px;
+}
+
+.menu {
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  background: white;
+  width: 300px;
+  height: 100%;
+  padding-top: 65px;
+}
+.menu li {
+  width: 100%;
+}
+
+.menu li a,
+.menu li a:hover {
+  padding: 30px;
+  font-size: 24px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 700px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.half {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  color: gray;
+  font-size: larger;
+}
+.nav_bar {
+  border-bottom: 1px grey solid;
+}
+.nav:hover {
+  color: black;
+  text-decoration: underline;
+}
+.logo {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+#snek {
+  width: 20%;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.main_page {
+  padding-top: 100px;
+  display: flex;
+}
+
+#com {
+  color: orange;
+  font-weight: 700;
+}
+#offer {
+  font-size: xx-large;
+  font-weight: 900;
+}
+#desc {
+  color: grey;
+  font-weight: 600;
+}
+#price {
+  color: grey;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+#off_50 {
+  float: inline-start;
+  height: 30px;
+  width: 40px;
+}
+.set {
+  display: flex;
+  align-content: center;
+}
+.set #off_50 {
+  margin-bottom: 2px;
+}
+
+.button-container {
+  background: rgb(231, 231, 231);
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+.lineup {
+  display: flex;
+}
+.btn {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 800;
+  border-radius: 5px;
+  flex: 1;
+  border: none;
+  background-color: transparent;
+}
+
+.btn:nth-child(odd) {
+  color: orangered;
+}
+
+.btn:nth-child(odd):active {
+  border: 1px solid lightgray;
+}
+
+.key {
+  height: 50px;
+  background-color: grey;
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: end;
+}
+.btn2 {
+  width: 6.25;
+  color: orange;
+  font-size: larger;
+  font-weight: 800;
+  border-radius: 5px;
+  background-color: grey;
+  border: none;
+}
+.btn1 {
+  width: 40%;
+  background-color: orange;
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+  border-color: orange;
+  border-radius: 5px;
+}
+.par {
+  display: flex;
+}
+.show {
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
+.fit {
+  height: 35%;
+  width: 60%;
+  border-radius: 60px;
+}
+.dis:hover {
+  border-radius: 20px;
+  border: 2px orange solid;
+  opacity: 0.7;
+}
+.images {
+  display: flex;
+  justify-content: space-evenly;
+}
+.dis {
+  height: 60px;
+  width: 60px;
+}
+
+/* @media(min-width:300px)and(max-width:400px){
+   
+} */
+
+@media only screen and (max-width: 700px) {
+  .half {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sidenav,
+  .hb {
+    display: block;
+  }
+
+  .logo {
+    text-align: center; /* Center the logo */
+    margin-bottom: 20px; /* Add some space between logo and nav bar */
+  }
+  .half {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .logo {
+    text-align: center; /* Center the logo */
+    margin-bottom: 20px; /* Add some space between logo and nav bar */
+  }
+
+  .main_page {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .show img {
+    width: 100%;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dis {
+    width: 45%;
+    margin: 5px;
+  }
+
+  #com {
+    font-size: 24px;
+  }
+
+  #offer {
+    font-size: 20px;
+  }
+
+  #desc {
+    font-size: 16px;
+  }
+
+  #price {
+    font-size: 20px;
+  }
+
+  .set {
+    display: flex;
+    align-items: center;
+  }
+
+  #offer,
+  #price {
+    margin-right: 10px;
+  }
+
+  .btn,
+  .btn2,
+  .btn1 {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 18px;
+  }
+}

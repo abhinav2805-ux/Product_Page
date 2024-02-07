@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneakers company</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="nav_bar">
+      <span class="hb" onclick="openNav()"
+        ><i class="fa-solid fa-bars"></i
+      ></span>
+      <div id="snek">
+        <p>sneakers</p>
+      </div>
+      <div class="half">
+        <div class="nav">
+          <p>Collections</p>
+        </div>
+        <div class="nav">
+          <p>Men</p>
+        </div>
+        <div class="nav">
+          <p>Women</p>
+        </div>
+        <div class="nav">
+          <p>About</p>
+        </div>
+        <div class="nav">
+          <p>Contact</p>
+        </div>
+      </div>
+
+      <div class="logo">
+        <div id="logo1">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="logo2">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Collections</a>
+      <a href="#">Male</a>
+      <a href="#">Female</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="main_page">
+      <div class="left">
+        <div class="show">
+          <img class="fit" src="pic1.png" />
+        </div>
+
+        <div class="images">
+          <div>
+            <img class="dis" src="pic1.png" alt="Clickable Image" onclick="myFunction(this)"/>
+          </div>
+          <div>
+            <img class="dis" src="pic2.png" alt="Clickable Image" onclick="myFunction(this)" />
+          </div>
+          <div>
+            <img class="dis" src="pic3.png" alt="Clickable Image" onclick="myFunction(this)"/>
+          </div>
+          <div>
+            <img class="dis" src="pic4.png" alt="Clickable Image" onclick="myFunction(this)"/>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <p id="com">SNEAKER COMPANY</p>
+        <p id="offer">Fall Limited Edition <br />Sneakers</p>
+        <br /><br />
+        <p id="desc">
+          These low-profile sneakers are your perfect casual wear<br />
+          companion. Feaaturing a durable rubber outer sole, they'll
+          <br />withstand everything the weather can offer.
+        </p>
+        <br />
+        <div class="set">
+          <p id="offer">$ 125.00</p>
+          <img id="off_50" src="off.png" />
+        </div>
+        <p id="price">$ 250.00</p>
+        <div class="lineup">
+          <div class="button-container">
+            <button class="btn">-</button>
+            <button class="btn" id="counter">0</button>
+            <button class="btn">+</button>
+          </div>
+
+          <button class="btn1">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
